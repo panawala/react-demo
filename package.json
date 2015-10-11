@@ -1,0 +1,63 @@
+{
+  "name": "react-demo",
+  "version": "1.0.0",
+  "description": "A complete async router React.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rackt/react-router.git"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "antd": "^0.9.1",
+    "history": "^1.11.0",
+    "invariant": "^2.0.0",
+    "warning": "^2.0.0"
+  },
+  "devDependencies": {
+    "assert": "1.3.0",
+    "babel": "^5.4.7",
+    "babel-core": "^5.4.7",
+    "babel-eslint": "^3.1.23",
+    "babel-loader": "^5.0.0",
+    "bundle-loader": "^0.5.2",
+    "css-loader": "^0.19.0",
+    "eslint": "1.4.0",
+    "eslint-plugin-react": "3.3.2",
+    "expect": "1.10.0",
+    "express": "^4.13.3",
+    "express-urlrewrite": "^1.2.0",
+    "karma": "^0.13.8",
+    "karma-browserstack-launcher": "^0.1.4",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-mocha": "^0.2.0",
+    "karma-mocha-reporter": "^1.1.1",
+    "karma-sourcemap-loader": "^0.3.5",
+    "karma-webpack": "^1.7.0",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.1",
+    "mocha": "^2.0.1",
+    "react": "0.13.x",
+    "react-dom": "0.14.0",
+    "react-router": "^1.0.0-rc3",
+    "rf-changelog": "^0.4.0",
+    "style-loader": "^0.12.4",
+    "webpack": "^1.4.13",
+    "webpack-dev-middleware": "^1.2.0"
+  },
+  "tags": [
+    "react",
+    "router"
+  ],
+  "keywords": [
+    "react",
+    "react-component",
+    "routing",
+    "route",
+    "routes",
+    "router"
+  ]
+}
