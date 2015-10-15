@@ -1,7 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router'
+import NavLink from './base/NavLink.js'
+import NavIndexLink from './base/NavIndexLink.js'
 
-require('./app.less');
+require('./../static/css/app.less');
 
 class GlobalNav extends React.Component {
 
@@ -14,29 +15,45 @@ class GlobalNav extends React.Component {
 
   constructor(props, context) {
     super(props, context);
-    this.logOut = this.logOut.bind(this)
-  }
-
-  logOut() {
-    alert('log out')
+    this.state = {current: 'mail'};
   }
 
   render() {
-    var { user } = this.props;
     return (
-      <div className="wrapper">
-        <div style={{ float: 'left' }}>
-          <Link to="/" className="link">Home</Link>{' '}
-          <Link to="/calendar" className="link" activeClassName="activeLink">Calendar</Link>{' '}
-          <Link to="/grades" className="link" activeClassName="activeLink">Grades</Link>{' '}
-          <Link to="/messages" className="link" activeClassName="activeLink">Messages</Link>{' '}
+        <nav className="navbar navbar-inverse navbar-fixed-top">
+        <div className="container">
+            <div className="navbar-header">
+                <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span className="sr-only">Toggle navigation</span>
+                    <span className="icon-bar"></span>
+                    <span className="icon-bar"></span>
+                    <span className="icon-bar"></span>
+                </button>
+                <a className="navbar-brand" href="#">Bootstrap theme</a>
+            </div>
+            <div id="navbar" className="navbar-collapse collapse">
+                <ul className="nav navbar-nav">
+                    <NavIndexLink to="/" activeClassName="active">Home</NavIndexLink>
+                    <NavLink to="/calender" activeClassName="active">Calender</NavLink>
+                    <NavLink to="/grades" activeClassName="active">Grades</NavLink>
+                    <li className="dropdown">
+                        <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span className="caret"></span></a>
+                        <ul className="dropdown-menu">
+                            <NavLink to="/messages" activeClassName="active">Messages</NavLink>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" className="divider"></li>
+                            <li className="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated Link</a></li>
+                            <li><a href="#">One more separated Link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div style={{ float: 'right' }}>
-          <Link className="link" to="/profile">{user.name}</Link>
-            <button onClick={this.logOut}>log out</button>
-        </div>
-      </div>
-    )
+       </nav>
+    );
+
   }
 }
 
