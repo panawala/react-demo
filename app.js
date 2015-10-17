@@ -9,11 +9,11 @@ const history = useBasename(createHistory)({
 
 render((
     <Router history={history}>
-        <Route path="/" getComponent={ require('./routes/async_routes').index }>
-            <IndexRoute getComponent={ require('./routes/async_routes').index }/>
-            <Route path="/calender" getComponent={ require('./routes/async_routes').calender }/>
-            <Route path="/grades" getComponent={ require('./routes/async_routes').grades }/>
-            <Route path="/messages" getComponent={ require('./routes/async_routes').messages }/>
+        <Route path="/" getComponent={ require('./routes/async_components').index }>
+            <IndexRoute getComponent={ require('./routes/async_components').index }/>
+            <Route path="/custom_form" getComponent={ require('./routes/async_components').custom_form }/>
+            <Route path="/newform" getComponent={ require('./routes/async_components').newform }/>
+            <Route path="/messages" getComponent={ require('./routes/async_components').messages }/>
         </Route>
     </Router>
 ), document.getElementById('example'));

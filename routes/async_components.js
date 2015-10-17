@@ -4,14 +4,14 @@ export default {
             cb(null, require('./../components/App'))
         })
     },
-    calender: (location, cb) => {
+    custom_form: (location, cb) => {
         require.ensure([], (require) => {
-            cb(null, require('./../components/Calendar'))
+            cb(null, require('./../components/CustomForm'))
         })
     },
-    grades: (location, cb) => {
+    newform: (location, cb) => {
         require.ensure([], (require) => {
-            cb(null, require('./../components/Grades'))
+            cb(null, require('./../components/NewForm'))
         })
     },
     messages:(location, cb) => {

@@ -31,6 +31,7 @@
     "express-urlrewrite": "^1.2.0",
     "less": "^2.5.3",
     "less-loader": "^2.2.1",
+    "newforms": "^0.12.1",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "react-router": "^1.0.0-rc3",

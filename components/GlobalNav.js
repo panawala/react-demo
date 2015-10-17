@@ -34,8 +34,8 @@ class GlobalNav extends React.Component {
             <div id="navbar" className="navbar-collapse collapse">
                 <ul className="nav navbar-nav">
                     <NavIndexLink to="/" activeClassName="active">Home</NavIndexLink>
-                    <NavLink to="/calender" activeClassName="active">Calender</NavLink>
-                    <NavLink to="/grades" activeClassName="active">Grades</NavLink>
+                    <NavLink to="/custom_form" activeClassName="active">Custom Form</NavLink>
+                    <NavLink to="/newform" activeClassName="active">NewForm</NavLink>
                     <li className="dropdown">
                         <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span className="caret"></span></a>
                         <ul className="dropdown-menu">
