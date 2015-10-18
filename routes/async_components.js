@@ -18,5 +18,5 @@ export default {
         require.ensure([], (require) => {
             cb(null, require('./../components/Messages'))
         })
-    },
+    }
 };
